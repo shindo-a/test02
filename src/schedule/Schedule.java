@@ -6,7 +6,7 @@ public class Schedule {
 		{"javaプログラミング実習" , "ドキュメントと管理ツール", "マクロ", "データベース", "Webプログラミング", "サービスサイドjava","企業実習", "Pythonプログラミング"};
 	String a;
 	//予定を返す
-	//
+	////
 	public String ans(int m, int d) {
 		if(m == 9 && d <= 26) {a = yotei[0];};
 		if(m == 9 && d >= 27){a = yotei[1];}
