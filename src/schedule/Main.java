@@ -9,7 +9,7 @@ public class Main {
 		//当日の表示
 		//明日の表示
 		//予定の登録
-
+		//
 
 		Cal cal = new Cal();//インスタンス
 		Schedule sc = new Schedule();
