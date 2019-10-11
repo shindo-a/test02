@@ -7,13 +7,17 @@ public class MyFrame extends Frame {
 
 	TextArea t;
 
-	public MyFrame(String text) {
+	public void MyFrame(String text) {
 		setSize(200, 200);
 		addWindowListener(new MyWindowAdapter());
 		t = new TextArea(text, 6, 20);
 		add(t);
 	}
 	public MyFrame() {
+
+	}
+	public void append(String text) {
+		t.append(text);
 
 	}
 

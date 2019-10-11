@@ -14,14 +14,15 @@ public class Main2 {
 		Cal cal = new Cal();//インスタンス
 		Schedule sc = new Schedule();
 		WriteRead wr = new WriteRead();
-		//MyFrame my = new MyFrame();
+		MyFrame my = new MyFrame();
 		cal.dayMonth();
 		cal.youbi();
 
 
-		MyFrame a = new MyFrame("本日は" + cal.m + "月" + cal.d + "日" + cal.yb + "曜日");
-		MyFrame b = new MyFrame("今日の授業は、" + sc.ans(cal.m, cal.d));
-
+		my.MyFrame("本日は" + cal.m + "月" + cal.d + "日" + cal.yb + "曜日");
+		my.setVisible(true);
+		my.append("\n今日の授業は、" + sc.ans(cal.m, cal.d));
+		//my.setVisible(true);
 
 		String name = "a" + cal.m + cal.d;
 		/*try {//↓エラーが出るのでトライキャッチ int →String の変換に何か方法は…？
